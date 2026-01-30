@@ -1,16 +1,31 @@
-.PHONY: install clean test help
+PROJECT_NAME = ProbablyOverthinkingBlog
+PYTHON_VERSION = 3.11
+PYTHON_INTERPRETER = python
+
+.PHONY: create_environment delete_environment install clean test help
 
 # Default target
 help:
 	@echo "Available targets:"
-	@echo "  install    - Install Python dependencies"
-	@echo "  clean      - Remove temporary files and caches"
-	@echo "  test       - Run tests (if available)"
-	@echo "  help       - Show this help message"
+	@echo "  create_environment  - Create conda environment with mamba"
+	@echo "  delete_environment  - Remove conda environment"
+	@echo "  install             - Update environment from environment.yml"
+	@echo "  clean               - Remove temporary files and caches"
+	@echo "  test                - Run tests (if available)"
+	@echo "  help                - Show this help message"
 
-# Install dependencies
+# Create conda environment using mamba
+create_environment:
+	mamba env create -f environment.yml
+	@echo ">>> mamba env created. Activate with:\nconda activate $(PROJECT_NAME)"
+
+# Delete conda environment
+delete_environment:
+	mamba env remove --name $(PROJECT_NAME)
+
+# Update environment from environment.yml
 install:
-	pip install -r requirements.txt
+	mamba env update -f environment.yml --name $(PROJECT_NAME)
 
 # Clean temporary files
 clean:
