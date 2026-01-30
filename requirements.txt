@@ -1,0 +1,41 @@
+# Python dependencies for ProbablyOverthinkingBlog
+# Based on environment.yml from ProbablyOverthinkingIt
+#
+# Note: Versions are not pinned to allow flexibility.
+# For production use, consider creating a requirements-lock.txt with pinned versions
+# using: pip freeze > requirements-lock.txt
+
+# Core scientific computing
+numpy
+matplotlib
+seaborn
+pandas
+scipy
+statsmodels
+
+# Jupyter notebooks
+jupyter
+
+# Data formats
+xlrd
+pytables
+
+# Web scraping and parsing
+lxml
+beautifulsoup4
+html5lib
+
+# Graph analysis
+networkx
+
+# Bayesian statistics
+# Note: pymc3 is used to match the original ProbablyOverthinkingIt environment
+# For new projects, consider using the newer pymc package instead
+pymc3
+arviz
+
+# Additional distributions
+empiricaldist
+
+# API and HTTP requests (for WordPress and Blogger APIs)
+requests
