@@ -29,6 +29,8 @@ html5lib
 networkx
 
 # Bayesian statistics
+# Note: pymc3 is used to match the original ProbablyOverthinkingIt environment
+# For new projects, consider using the newer pymc package instead
 pymc3
 arviz
 
