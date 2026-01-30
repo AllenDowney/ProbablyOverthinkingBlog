@@ -14,14 +14,14 @@ install:
 
 # Clean temporary files
 clean:
-	find . -type f -name '*.pyc' -delete
-	find . -type d -name '__pycache__' -delete
-	find . -type d -name '.pytest_cache' -delete
-	find . -type d -name '.ipynb_checkpoints' -delete
-	rm -rf .ruff_cache/
-	rm -rf build/
-	rm -rf dist/
-	rm -rf *.egg-info
+	-find . -type f -name '*.pyc' -delete
+	-find . -type d -name '__pycache__' -delete
+	-find . -type d -name '.pytest_cache' -delete
+	-find . -type d -name '.ipynb_checkpoints' -delete
+	-rm -rf .ruff_cache/
+	-rm -rf build/
+	-rm -rf dist/
+	-rm -rf *.egg-info
 
 # Run tests
 test:

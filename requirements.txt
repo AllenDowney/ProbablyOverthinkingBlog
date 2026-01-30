@@ -1,5 +1,9 @@
 # Python dependencies for ProbablyOverthinkingBlog
 # Based on environment.yml from ProbablyOverthinkingIt
+#
+# Note: Versions are not pinned to allow flexibility.
+# For production use, consider creating a requirements-lock.txt with pinned versions
+# using: pip freeze > requirements-lock.txt
 
 # Core scientific computing
 numpy
