@@ -5,9 +5,9 @@ description: >-
   plot of crossing year versus median daily income, using Our World in Data.
 ---
 
-## The Low-fertility Club Is Less Exclusive
+# The Low-fertility Club Is Less Exclusive
 
-> A simple analysis suggests that the median daily income where countries cross below replacement fertility has fallen from roughly $32 per day in 1950 to about $8 now.
+*Summary: A simple analysis suggests that the median daily income where countries cross below replacement fertility has fallen from about \$32 per day in 1950 to about \$8 now.*
 
 In June 2026 [*The Economist*](https://www.economist.com/leaders/2026/06/04/indias-surprise-baby-bust-is-a-warning-to-the-world) reported that India's total fertility rate has fallen to 1.9, which is below replacement rate (generally considered 2.1).
 They note:
@@ -46,18 +46,18 @@ Blue points use reported or interpolated income; orange points use extrapolated 
 The red line is a trend fit to log(income) versus year.
 ```
 
-The trend suggests that the typical income at replacement fertility has decreased almost four-fold, from about $32 per day to a little more than $8.
+The trend suggests that the typical income at replacement fertility has decreased almost four-fold, from about \$32 per day in 1950 to a little more than \$8 now.
 
 A country above the trend line is "late" in the sense that it made the transition at a higher income than typical.
 By that standard, Switzerland and the United States were late, the UAE and Qatar were very late, and the countries mentioned by *The Economist* were only a little behind schedule.
 
 A country below the line is "early" in the sense that it made the transition at a lower income level than expected.
 As *The Economist* suggests, India was early — but not by much.
-Several former Soviet states were much earlier, and the biggest outlier is China, which implemented the [one-child policy](https://en.wikipedia.org/wiki/One-child_policy) in 1979 and fell below replacement in 1991, when median income was less than $2 per day.
+Several former Soviet states were much earlier, and the biggest outlier is China, which implemented the [one-child policy](https://en.wikipedia.org/wiki/One-child_policy) in 1979 and fell below replacement in 1991, when median income was less than \$2 per day.
 
 *The Economist* asserts that "The UN, which tries to predict such things, has failed to account for the speed of fertility decline in its central forecast for the global population." If so, the peak of world population will probably come sooner than predicted and at a lower total.
 
-## Medical and cultural transmission
+## Technical and Cultural Diffusion
 
 To understand why the income level at replacement fertility is falling, it helps to think about the likely causes of demographic transition, which I remember with the acronym HERO:
 
@@ -85,8 +85,7 @@ For all of these reasons, income may become a less important predictor of fertil
 
 A limitation of this analysis is survivorship bias: the scatter plot only includes countries that have already crossed below replacement fertility.
 Countries that have not yet crossed are excluded, and it is hard to say what effect that omission has on the trend.
-A more complete analysis would treat the transition as a time-to-event problem and include countries that have not yet made the transition.
-
+A more complete analysis would treat the transition as a time-to-event problem and include countries that have not yet dropped below replacement fertility.
 
 The analysis notebook is in the [Probably Overthinking Blog repository](https://github.com/AllenDowney/ProbablyOverthinkingBlog/blob/main/notebooks/fertility.md).
 
